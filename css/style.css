@@ -8,8 +8,9 @@
 body{
     background-color: #EEEEEE;
     font-family: sans-serif;
-    height: 3000px;
 }
+
+/*HEADER*/
 
 header{
     display: flex;
@@ -17,6 +18,7 @@ header{
     box-shadow: 0 6px 4px 0 rgba(0,0,0,.2);
     width: 100%;
     position: fixed;
+    background-color: #EEEEEE;
 }
 
 header section{
@@ -24,7 +26,7 @@ header section{
     align-items: center;
     width: 40%;
     margin-left: 5rem;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 nav{
@@ -45,11 +47,121 @@ nav li{
 }
 
 nav li:nth-child(1),
-nav li:nth-child(5){
+.contact{
     color: #DE0000;
 }
 
-nav li:nth-child(5){
-    border: #DE0000 solid;
-    padding: 0.5rem 1rem;
+.contact{
+    border: 3.3px #DE0000 solid;
+    padding: 0.8rem 1rem;
+    font-weight: 600;
 }
+
+
+/*MAIN*/
+
+main{
+    padding-top: 15rem;
+}
+
+
+/*MAIN HOMEPAGE*/
+main div:nth-child(1){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+    justify-content: right;
+    width: 70ch;
+}
+
+main section article h2{
+    font-size: 3rem;
+}
+
+main section article h1{
+    font-size: 3rem;
+    border: 4px #DE0000 solid;
+    padding: 0.5rem 1.5rem;
+    color: #DE0000;
+}
+
+main section article h4{
+    font-size: 2rem;
+}
+
+main section article button{
+    font-size: 1rem;
+}
+
+main section article div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+main section article div a{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 600;
+}
+
+main section img{
+    width: 600px;
+}
+
+
+/*MAIN AD*/
+
+.ad{
+    background-color: #DE0000;
+    margin-top: 12rem;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad section{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    gap: 2rem;
+    width: 100%;
+}
+
+.ad h1{
+    font-size: 2.5rem;
+}
+
+.ad hr{
+    width: 5rem;
+}
+
+.ad p{
+    font-size: 1.2rem;
+}
+
+.ad h4{
+    font-size: 1.5rem;
+}
+
+
+
+/*MAIN SERVICEPAGE*/
