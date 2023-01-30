@@ -122,7 +122,7 @@ main section article div a{
     font-weight: 600;
 }
 
-main section img{
+main section .urus{
     width: 600px;
 }
 
@@ -186,7 +186,8 @@ main section img{
 }
 
 .secTire,
-.secOil{
+.secOil,
+.secIdk{
     margin-top: 15rem;
     display: flex;
     align-items: center;
@@ -194,7 +195,8 @@ main section img{
 }
 
 .secTire article,
-.secOil article{
+.secOil article,
+.secIdk article{
     width: 50%;
     display: flex;
     align-items: center;
@@ -202,37 +204,44 @@ main section img{
 }
 
 .secTire article:nth-child(2),
-.secOil article:nth-child(1){
+.secOil article:nth-child(1),
+.secIdk article:nth-child(2){
     flex-direction: column;
     gap: 2rem;
 }
 
-.secTire img:nth-child(1)
-.secOil img:nth-child(2){
-    width: 400px;
+.secTire img:nth-child(1),
+.secOil img:nth-child(2),
+.secIdk img:nth-child(1){
+    width: 500px;
 }
 
 
 .secTire article:nth-child(2) h2,
-.secOil article:nth-child(1) h2{
+.secOil article:nth-child(1) h2,
+.secIdk article:nth-child(2) h2{
     font-size: 2rem;
     border: 4px #DE0000 solid;
     padding: 0.5rem 1rem;
     color: #DE0000;
+    margin-top: -2rem;
 }
 
 .secTire article:nth-child(2) hr,
-.secOil article:nth-child(1) hr{
+.secOil article:nth-child(1) hr,
+.secIdk article:nth-child(2) hr{
     width: 4rem;
-    height: 3px;
-    background-color: rgb(91, 91, 91);
+    border: 1px rgba(0, 0, 0, 0.3) solid;
 }
 
-.secTire article:nth-child(2) img{
+.secTire article:nth-child(2) img,
+.secIdk article:nth-child(2) img{
     width: 100px;
 }
 
 .secOil article:nth-child(1) img{
     width: 160px;
 }
+
+
 
