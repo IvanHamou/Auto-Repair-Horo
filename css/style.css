@@ -147,6 +147,20 @@ main section .urus{
     align-items: center;
 }
 
+.ad article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ad article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .ad h1{
     font-size: 2.5rem;
 }
@@ -171,7 +185,8 @@ main section .urus{
     margin-top: 10rem;
 }
 
-.servicePage .titleArt{
+.servicePage .titleArt,
+.aboutUsPage .titleArt{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,4 +259,20 @@ main section .urus{
 }
 
 
+/*MAIN SEPERATION*/
+.seperation{
+    margin-top: 12rem;
+    background-color: #DE0000;
+    padding: 4rem 0;
+}
 
+
+/*MAIN ABOUT US PAGE*/
+
+.aboutUsPage{
+    margin-top: 10rem;
+}
+
+.aboutUsPage section{
+    margin-top: 12rem;
+}
