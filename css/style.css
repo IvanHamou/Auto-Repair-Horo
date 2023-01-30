@@ -40,6 +40,10 @@ nav ul{
     font-size: 1.2rem;
 }
 
+nav li{
+    cursor: pointer;
+}
+
 nav li:nth-child(1),
 nav li:nth-child(5){
     color: #DE0000;
