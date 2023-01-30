@@ -73,14 +73,14 @@ main div:nth-child(1){
     justify-content: center;
 }
 
-main section{
+main .homeSec{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main section article{
+main .homeSec article{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -144,6 +144,7 @@ main section img{
     margin: 4rem 0;
     gap: 2rem;
     width: 100%;
+    align-items: center;
 }
 
 .ad h1{
@@ -165,3 +166,73 @@ main section img{
 
 
 /*MAIN SERVICEPAGE*/
+
+.servicePage{
+    margin-top: 10rem;
+}
+
+.servicePage .titleArt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageTitle{
+    text-align: center;
+    font-size: 5rem;
+    border: 4px #DE0000 solid;
+    padding: 1.5rem 15rem;
+    color: #DE0000;
+}
+
+.secTire,
+.secOil{
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secTire article,
+.secOil article{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secTire article:nth-child(2),
+.secOil article:nth-child(1){
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.secTire img:nth-child(1)
+.secOil img:nth-child(2){
+    width: 400px;
+}
+
+
+.secTire article:nth-child(2) h2,
+.secOil article:nth-child(1) h2{
+    font-size: 2rem;
+    border: 4px #DE0000 solid;
+    padding: 0.5rem 1rem;
+    color: #DE0000;
+}
+
+.secTire article:nth-child(2) hr,
+.secOil article:nth-child(1) hr{
+    width: 4rem;
+    height: 3px;
+    background-color: rgb(91, 91, 91);
+}
+
+.secTire article:nth-child(2) img{
+    width: 100px;
+}
+
+.secOil article:nth-child(1) img{
+    width: 160px;
+}
+
