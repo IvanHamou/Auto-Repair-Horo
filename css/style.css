@@ -149,16 +149,22 @@ main section .urus{
 
 .ad article{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 3.5rem;
 }
 
 .ad article div{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    width: 25%;
+    text-align: center;
+}
+
+.ad article div p{
+    font-size: 1rem;
 }
 
 .ad h1{
@@ -186,7 +192,8 @@ main section .urus{
 }
 
 .servicePage .titleArt,
-.aboutUsPage .titleArt{
+.aboutUsPage .titleArt,
+.contactUsPage .titleArt{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,6 +204,14 @@ main section .urus{
     font-size: 5rem;
     border: 4px #DE0000 solid;
     padding: 1.5rem 15rem;
+    color: #DE0000;
+}
+
+.contactUsPage .pageTitle{
+    text-align: center;
+    font-size: 5rem;
+    border: 4px #DE0000 solid;
+    padding: 1.5rem 5rem;
     color: #DE0000;
 }
 
@@ -276,3 +291,6 @@ main section .urus{
 .aboutUsPage section{
     margin-top: 12rem;
 }
+
+
+/*MAIN CONTACT US PAGE*/
