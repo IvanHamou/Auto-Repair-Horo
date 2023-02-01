@@ -66,7 +66,7 @@ main{
 
 
 /*MAIN HOMEPAGE*/
-main div:nth-child(1){
+.homePage{
     width: 100%;
     display: flex;
     align-items: center;
@@ -303,3 +303,106 @@ main section .urus{
     margin-top: 12rem;
 }
 
+.contactContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContent section{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContent section:nth-child(2){ 
+    align-items: flex-start;
+    margin-top: 15rem;
+}
+
+.contactContent section:nth-child(1) article form,
+#fb{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+.contactContent h1{
+    font-size: 2.5rem;
+}
+
+#alignThis{
+    align-self: center;
+}
+
+#fname,
+#lname,
+#subject{
+    width: 30rem;
+    padding: 1rem 0.5rem;
+    font-family: sans-serif;
+}
+
+#send{
+    align-self: flex-start;
+    border: 4px #DE0000 solid;
+    padding: 0.5rem 1rem;
+    color: #DE0000;
+    font-weight: 600;
+}
+
+#send:hover{
+    color: #EEEEEE;
+    background-color: #DE0000;
+    cursor: pointer;
+}
+
+.contactContent section:nth-child(1) article:nth-child(2){ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+#fb{
+    margin-top: 7rem;
+}
+
+#fb img{
+    width: 45px;
+}
+
+
+#googleMap{
+    margin-top: 3rem;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.contactInfo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+iframe{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

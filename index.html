@@ -28,7 +28,7 @@
     <main>
 
         <!--HOMEPAGE-->
-        <div>
+        <div class="homePage">
             <section class="homeSec">
                 <article>
                     <h2>Reparationer Gjorda På</h2>
@@ -155,48 +155,54 @@
                  <h1 class="pageTitle">KONTAKTA OSS</h1>
             </article> 
 
-            <section>
-                <h1>VAD KAN VI HJÄLPA ER MED?</h1>
-                <article>
-                    <form action="/action_page.php">
-                        <label for="fname"></label>
-                        <input type="text" id="fname" name="firstname" placeholder="Namn">
-                    
-                        <label for="lname"></label>
-                        <input type="text" id="lname" name="lastname" placeholder="E-post">
-                    
-                        <label for="subject"></label>
-                        <textarea id="subject" name="subject" placeholder="Meddelande" style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Skicka">
-                      </form>
-                </article>
-                <article>
-                    <h3>Följ oss på Facebook!</h3>
-                    <img src="/img/5365678_fb_facebook_facebook logo_icon (1).png" alt="facebook">
-                </article>
-            </section>
+            <div class="contactContent">
+                <section>
+                    <h1>VAD KAN VI HJÄLPA ER MED?</h1>
+                    <article>
+                        <form action="/action_page.php">
+                            <label for="fname"></label>
+                            <input type="text" id="fname" name="firstname" placeholder="Namn">
+                        
+                            <label for="lname"></label>
+                            <input type="text" id="lname" name="lastname" placeholder="E-post">
+                        
+                            <label for="subject"></label>
+                            <textarea id="subject" name="subject" placeholder="Meddelande" style="height:200px"></textarea>
+                        
+                            <input type="submit" id="send" value="Skicka">
+                          </form>
+                    </article>
+                    <article id="fb">
+                        <h3>Följ oss på Facebook!</h3>
+                        <img src="/img/5365678_fb_facebook_facebook logo_icon (1).png" alt="facebook">
+                    </article>
+                </section>
 
-            <section>
-                <h1>KONTAKT INFO</h1>
-                <article id="googleMap" style="width:100%;height:400px;"></article>
-                <article>
-                    <div>
-                        <h3>Adress</h3>
-                        <p>Repslagaregatan 16, 312 32, Laholm</p>
-                    </div>
-                    <div>
-                        <h3>Mejla oss</h3>
-                        <p>horohamou@gmail.com</p>
-                    </div>
-                    <div>
-                        <h3>Ring oss</h3>
-                        <p>0720062208</p>
-                    </div>
-                </article>
-            </section>
+                <section>
+                    <h1 id="alignThis">KONTAKT INFO</h1>
+                    <iframe id="googleMap" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2201.560167752051!2d13.05265631594358!3d56.50978328076259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465175f543757405%3A0x6e5a750e85da5d89!2sAuto%20Repair%20Horo!5e0!3m2!1sen!2sse!4v1675245107329!5m2!1sen!2sse" width="730" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <article class="contactInfo">
+                        <div>
+                            <h3>Adress</h3>
+                            <p>Repslagaregatan 16, 312 32, Laholm</p>
+                        </div>
+                        <div>
+                            <h3>Mejla oss</h3>
+                            <p>horohamou@gmail.com</p>
+                        </div>
+                        <div>
+                            <h3>Ring oss</h3>
+                            <p>0720062208</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
         </div>
         <!--END OF CONTACT US PAGE-->
     </main>
+
+
+
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
