@@ -406,3 +406,45 @@ iframe{
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+
+/*THIRD AD*/
+
+.adHours{
+    background-color: #DE0000;
+    margin-top: 12rem;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adHours section{
+    display: flex;
+    margin: 4rem 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.adHours article{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.adHours article div h3,
+.adHours article div p{
+    margin-top: 1rem;
+}
+
+.adHours h1{
+    font-size: 2.5rem;
+}
+
+
+.adHours p{
+    font-size: 1.2rem;
+}
