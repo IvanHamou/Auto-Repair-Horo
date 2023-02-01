@@ -294,3 +294,12 @@ main section .urus{
 
 
 /*MAIN CONTACT US PAGE*/
+
+.contactUsPage{
+    margin-top: 10rem;
+}
+
+.contactUsPage section{
+    margin-top: 12rem;
+}
+
