@@ -79,7 +79,9 @@ nav li:hover{
         display: block;
     }
 
-    
+    nav li{
+        display: none;
+    }
 }
 
 
@@ -153,7 +155,29 @@ main section article div a{
 }
 
 main section .urus{
-    width: 600px;
+    max-width: 600px;
+}
+
+@media (max-width: 1024px){
+    .homePage{
+        flex-direction: column;
+    }
+
+    main .homeSec{
+        width: 100%;
+    }
+
+    main .homeSec article{
+        align-items: center;
+        text-align: center;
+    }
+
+    #contactDiv {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
 }
 
 
@@ -297,13 +321,24 @@ main section .urus{
 
 .secTire article:nth-child(2) img,
 .secIdk article:nth-child(2) img{
-    width: 100px;
+    max-width: 100px;
 }
 
 .secOil article:nth-child(1) img{
-    width: 160px;
+    max-width: 160px;
 }
 
+@media (max-width: 1024px){
+
+    .secOil{
+        flex-direction: column-reverse;
+    }
+
+    .secTire,
+    .secIdk{
+        flex-direction: column;
+    }    
+}
 
 /*MAIN SEPERATION*/
 .seperation{
@@ -446,6 +481,13 @@ iframe{
     justify-content: flex-start;
 }
 
+@media (max-width: 1024px){
+
+    .contactContent{
+        flex-direction: column;
+    }    
+}
+
 
 /*THIRD AD*/
 
@@ -486,6 +528,14 @@ iframe{
 
 .adHours p{
     font-size: 1.2rem;
+}
+
+@media (max-width: 1024px){
+
+    .adHours section{
+        flex-direction: column;
+        gap: 2rem;
+    } 
 }
 
 
