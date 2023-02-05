@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
 body{
@@ -43,15 +44,12 @@ nav ul{
 }
 
 nav li{
+    color: #0A0A0A;
     cursor: pointer;
 }
 
-nav a li:link{
-    color: #0A0A0A;
-}
-
-nav li:nth-child(1),
-.contact{
+.contact,
+nav li:hover{
     color: #DE0000;
 }
 
@@ -111,6 +109,7 @@ main section article h4{
 
 main section article button{
     font-size: 1rem;
+    cursor: pointer;
 }
 
 #contactDiv {
@@ -118,6 +117,10 @@ main section article button{
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+}
+
+.readMore{
+    text-decoration: underline;
 }
 
 main section article div a{
@@ -406,6 +409,12 @@ main section .urus{
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+}
+
+.contactInfo div a{
+    font-size: 1rem;
+    color: #DE0000;
+    font-weight: 600;
 }
 
 iframe{
