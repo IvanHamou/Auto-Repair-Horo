@@ -16,11 +16,11 @@
         
         <nav>
             <ul>
-                <li>Hem</li>
-                <li>Service</li>
-                <li>Om Oss</li>
-                <li>Galleri</li>
-                <li class="contact">Kontakta oss</li>
+                <a href="#"><li>Hem</li></a>
+                <a href="#serviceAnchor"><li>Service</li></a>
+                <a href="#aboutUsAnchor"><li>Om Oss</li></a>
+                <a href="#galleryAnchor"><li>Galleri</li></a>
+                <a href="#contactUsAnchor"><li class="contact">Kontakta oss</li></a>
             </ul>
         </nav>
     </header>
@@ -28,13 +28,13 @@
     <main>
 
         <!--HOMEPAGE-->
-        <div class="homePage">
+        <div class="homePage" id="homeAnchor">
             <section class="homeSec">
                 <article>
                     <h2>Reparationer Gjorda På</h2>
-                    <h1>RÄTT SÄTT</h1>
+                    <h1 id="mainText">RÄTT SÄTT</h1>
                     <h4>Med vår erfarenhet ger vi dig den service du behöver</h4>
-                    <div>
+                    <div id="contactDiv">
                         <button class="contact">KONTAKTA OSS</button>
                         <a href="#">LÄS MER OM OSS</a>
                     </div>
@@ -58,9 +58,10 @@
         </div>
         <!--END OF AD-->
         
-
+        <div id="serviceAnchor"></div>
+        
         <!--SERVICEPAGE-->
-        <div class="servicePage"> 
+        <div class="servicePage" > 
             <article class="titleArt">
                 <h1 class="pageTitle">SERVICE</h1>
             </article>
@@ -113,7 +114,7 @@
         <!--END OF SERVICEPAGE-->
 
         <section class="seperation"></section>
-
+        <div id="aboutUsAnchor"></div>
         <!--ABOUT US PAGE-->
         <div class="aboutUsPage">
            <article class="titleArt">
@@ -149,6 +150,7 @@
         </div>
         <!--END OF SECOND AD-->
 
+        <div id="contactUsAnchor"></div>
         <!--CONTACT US PAGE-->
         <div class="contactUsPage">
             <article class="titleArt">
@@ -199,7 +201,6 @@
             </div>
         </div>
         <!--END OF CONTACT US PAGE-->
-    </main>
 
         <!--THIRD AD-->
         <div class="adHours">
@@ -222,20 +223,61 @@
             </section>
         </div>
         <!--END OF THIRD AD-->
-
+        
+        <div id="galleryAnchor"></div>
         <!--GALLERY PAGE-->
         <div class="galleryPage">
             <article class="titleArt">
                  <h1 class="pageTitle">GALLERI</h1>
             </article> 
-
+    
             <section>
                 <h1>Följ oss på Facebook för att se på vårt arbete!</h1>
                 <button>FÖLJ OSS PÅ FACEBOOK</button>
             </section>
         </div>
         <!--END OF GALLERY PAGE-->
+    </main>
 
+    <footer>
+        <section class="mainFooter">
+            <article class="footerLogo">
+                <div>
+                    <img src="/img/urus_prev_ui 3.png" alt="logo">
+                    <h1>AUTO REPAIR HORO</h1>
+                </div>
+                <div>
+                    <h2>Följ oss!</h2>
+                    <img src="/img/5365678_fb_facebook_facebook logo_icon (1).png" alt="facebook">
+                </div>
+            </article>
+            <article class="footerLinks">
+                <h1>LÄNKAR</h1>
+                <ul>
+                    <li>Hem</li>
+                    <li>Service</li>
+                    <li>Om oss</li>
+                    <li>Kontakta oss</li>
+                </ul>
+            </article>
+            <article class="footerHours">
+                <h1>ÖPPETTIDER</h1>
+                <div class="parentDiv">
+                    <div>
+                        <h3>Måndag- Fredag</h3>
+                        <h3>Lördag</h3>
+                        <h3>Söndag</h3>
+                    </div>
+                    <div>
+                        <p>08.00 - 17.00</p>
+                        <p>09.00 - 15.00</p>
+                        <p>Stängt</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+    
     <script type="module" src="js/script.js"></script>
 </body>
 </html>
