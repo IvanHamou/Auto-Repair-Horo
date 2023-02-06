@@ -77,9 +77,10 @@ nav li:hover{
 
     .hamburger{
         display: block;
+        cursor: pointer;
     }
 
-    nav li{
+    nav {
         display: none;
     }
 
@@ -957,6 +958,50 @@ footer{
 
     .artCollection{
         flex-direction: column;
+    }
+
+}
+
+
+aside{
+    display: none;
+}
+
+@media (max-width: 1024px){
+
+    aside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        transition: var(--transition);
+        transform: translate(-100%);
+        width: 40%;
+        height: 70%;
+        --transition: all 0.2s linear;
+        background-color: #EEEEEE;
+        border: 3px solid #DE0000;
+    }
+
+    aside ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    aside li{
+        color: #0A0A0A;
+        cursor: pointer;
+    }
+
+    .displayMenu {
+        transform: translate(0);
     }
 
 }
