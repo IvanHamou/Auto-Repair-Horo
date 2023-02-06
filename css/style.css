@@ -82,6 +82,45 @@ nav li:hover{
     nav li{
         display: none;
     }
+
+    nav ul{
+        gap: 0;
+    }
+    
+    header section{
+
+        width: 80%;
+    }
+
+
+    nav {
+        width: 20%;
+    }
+}
+
+@media (max-width: 590px){
+
+    nav ul{
+        gap: 0;
+    }
+    
+    header section{
+        margin-left: 0;
+        width: 80%;
+    }
+
+    header section a h1{
+        font-size: 1.1rem;
+    }
+
+    nav {
+        width: 20%;
+    }
+
+    .contact,
+    .readMore{
+        font-size: 0.7rem;
+    }
 }
 
 
@@ -129,7 +168,7 @@ main section article h2{
 }
 
 main section article h4{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 main section article button{
@@ -159,8 +198,14 @@ main section .urus{
 }
 
 @media (max-width: 1024px){
+
+    main{
+        padding-top: 10rem;
+    }
+
     .homePage{
         flex-direction: column;
+        gap: 3rem;
     }
 
     main .homeSec{
@@ -170,6 +215,7 @@ main section .urus{
     main .homeSec article{
         align-items: center;
         text-align: center;
+        padding: 0 2rem;
     }
 
     #contactDiv {
@@ -177,6 +223,29 @@ main section .urus{
         align-items: center;
         justify-content: flex-start;
         gap: 2rem;
+    }
+}
+
+@media (max-width: 590px){
+
+    main{
+        padding-top: 8rem;
+    }
+
+    main section .urus{
+        max-width: 350px;
+    }
+
+    main section article h2{
+        font-size: 2rem;
+    }
+
+    #mainText{
+        font-size: 2rem;
+    }
+
+    main section article h4{
+        font-size: 1.2rem;
     }
 }
 
@@ -237,6 +306,43 @@ main section .urus{
     font-size: 1.5rem;
 }
 
+@media (max-width: 1024px){
+
+    .ad{
+        text-align: center; 
+    }
+
+    .ad section{
+        padding: 0 2rem;
+    }
+
+    .ad h1{
+        font-size: 1.5rem;
+    }
+
+    .ad h4{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 590px){
+
+    .ad{
+        margin-top: 5rem;
+    }
+
+    .ad article{
+        gap: 3rem;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .ad article div{
+        width: 100%;
+    }
+}
+
 
 
 /*MAIN SERVICEPAGE*/
@@ -268,6 +374,34 @@ main section .urus{
     border: 4px #DE0000 solid;
     padding: 1.5rem 5rem;
     color: #DE0000;
+}
+
+@media (max-width: 860px){
+
+    
+    .pageTitle{
+        font-size: 3rem;
+        padding: 1.5rem 10rem;
+    }
+
+    .contactUsPage .pageTitle{
+        font-size: 3rem;
+        padding: 1.5rem 3rem;
+    }
+
+}
+
+@media (max-width: 590px){
+
+    .pageTitle{
+        font-size: 2rem;
+        padding: 1.5rem 5rem;
+    }
+
+    .contactUsPage .pageTitle{
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
 }
 
 .secTire,
@@ -322,22 +456,54 @@ main section .urus{
 .secTire article:nth-child(2) img,
 .secIdk article:nth-child(2) img{
     max-width: 100px;
+    margin-bottom: 1rem;
 }
 
 .secOil article:nth-child(1) img{
     max-width: 160px;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 1024px){
 
     .secOil{
         flex-direction: column-reverse;
+        gap: 5rem;
     }
 
     .secTire,
     .secIdk{
         flex-direction: column;
+        gap: 5rem;
     }    
+
+    .secTire article:nth-child(2) img,
+    .secIdk article:nth-child(2) img{
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media (max-width: 590px){
+
+    .servicePage{
+        margin-top: 5rem;
+    }
+
+    .secTire,
+    .secOil,
+    .secIdk{
+        margin-top: 8rem;
+    }
+
+    .secTire article:nth-child(1) img,
+    .secIdk article:nth-child(1) img{
+        max-width: 300px;
+    }
+
+    .secOil article:nth-child(2) img{
+        max-width: 300px;
+    }
 }
 
 /*MAIN SEPERATION*/
@@ -345,6 +511,14 @@ main section .urus{
     margin-top: 12rem;
     background-color: #DE0000;
     padding: 4rem 0;
+}
+
+@media (max-width: 590px){
+
+    .seperation{
+        margin-top: 8rem;
+        padding: 2rem 0;
+    }
 }
 
 
@@ -358,6 +532,12 @@ main section .urus{
     margin-top: 12rem;
 }
 
+@media (max-width: 590px){
+
+    .aboutUsPage{
+        margin-top: 5rem;
+    }
+}
 
 /*MAIN CONTACT US PAGE*/
 
@@ -479,14 +659,73 @@ iframe{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    width:80%;
 }
+
 
 @media (max-width: 1024px){
 
     .contactContent{
         flex-direction: column;
     }    
+
+    .contactContent section{
+        width: 100%;
+    }
+
+    .contactContent section:nth-child(2){ 
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    .contactInfo{
+        align-items: center;
+    }
+
+    .contactInfo div {
+        align-items: center;
+        width: 100%;
+    }
 }
+
+@media (max-width: 590px){
+    #fname,
+    #lname,
+    #subject{
+        width: 20rem;   
+    }
+
+    .contactContent form{
+        padding: 0 2rem;
+    }
+
+    .contactContent section{
+        width: 100%;
+    }
+
+    .contactContent section:nth-child(2){
+        align-items: center;
+        margin-top: 10rem;
+    }
+
+    .contactContent h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .contactUsPage{
+        margin-top: 8rem;
+    }
+
+    .contactUsPage section{
+        margin-top: 5rem;
+    }
+
+    .contactContent section:nth-child(1) article:nth-child(2){
+        margin-top: 0;
+    }
+}
+
 
 
 /*THIRD AD*/
@@ -502,7 +741,7 @@ iframe{
 
 .adHours section{
     display: flex;
-    margin: 4rem 0;
+    padding: 4rem 0;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -533,9 +772,24 @@ iframe{
 @media (max-width: 1024px){
 
     .adHours section{
-        flex-direction: column;
         gap: 2rem;
+        padding: 4rem 2rem;
     } 
+}
+
+@media (max-width: 700px){
+
+    .adHours section{
+        flex-direction: column;
+    } 
+
+    .adHours article{
+        width: 100%;
+    }
+
+    .adHours{
+        margin-top: 8rem;
+    }
 }
 
 
@@ -566,9 +820,40 @@ iframe{
     cursor: pointer;
 }
 
+@media (max-width: 1024px){
+
+    .galleryPage h1{
+        text-align: center;
+    } 
+
+}
+
+@media (max-width: 590px){
+
+    .galleryPage section{
+        padding: 0 2rem;
+        margin-top: 5rem;
+    }
+
+    .galleryPage h1{
+        font-size: 1.8rem;
+        text-align: center;
+    } 
+
+    .galleryPage{
+        margin-top: 8rem;
+    }
+
+}
+
 
 
 /*FOOTER*/
+
+.artCollection{
+    display: flex;
+    gap: 5rem;
+}
 
 footer{
     margin-top: 15rem;
@@ -646,4 +931,32 @@ footer{
 
 .footerLogo a h1{
     color: #EEEEEE;
+}
+
+.rights{
+    background-color: #151515;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px){
+    .mainFooter{
+        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 590px){
+
+    .artCollection{
+        flex-direction: column;
+    }
+
 }
