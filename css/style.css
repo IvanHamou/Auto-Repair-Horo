@@ -43,6 +43,10 @@ nav{
     width: 60%;
 }
 
+nav a{
+    height: 100%;
+}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -78,6 +82,12 @@ nav li:hover{
     .hamburger{
         display: block;
         cursor: pointer;
+        transition-duration: 0.5s;
+    }
+
+    .rotateBurger{
+        transform: rotate(90deg);
+        transition-duration: 0.5s;
     }
 
     nav {
@@ -118,7 +128,7 @@ nav li:hover{
         width: 20%;
     }
 
-    .contact,
+    #contactDiv .contact,
     .readMore{
         font-size: 0.7rem;
     }
@@ -554,6 +564,8 @@ main section .urus{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
+    gap: 2rem;
 }
 
 .contactContent section{ 
@@ -693,7 +705,7 @@ iframe{
     #fname,
     #lname,
     #subject{
-        width: 20rem;   
+        width: 18rem;   
     }
 
     .contactContent form{
@@ -1000,8 +1012,28 @@ aside{
         cursor: pointer;
     }
 
+    aside .contact{
+        padding: 0.4rem 0.3rem;
+    }
+
     .displayMenu {
         transform: translate(0);
     }
 
 }
+
+
+
+
+
+
+
+
+.active li{
+    color: #DE0000;
+    transition: 0.3s ease color;
+    font-size: 1.25rem;
+    border-bottom: #DE0000 4px solid;   
+  }
+
+
