@@ -480,13 +480,12 @@ main section .urus{
 
     .secOil{
         flex-direction: column-reverse;
-        gap: 5rem;
     }
 
     .secTire,
     .secIdk{
         flex-direction: column;
-        gap: 5rem;
+        gap: 2rem;
     }    
 
     .secTire article:nth-child(2) img,
