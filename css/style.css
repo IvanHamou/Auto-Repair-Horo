@@ -295,6 +295,7 @@ main section .urus{
     align-items: center;
     width: 25%;
     text-align: center;
+    gap: 1.2rem;
 }
 
 .ad article div p{
@@ -988,12 +989,12 @@ aside{
         text-align: center;
         position: fixed;
         transition: var(--transition);
-        transform: translate(-100%);
+        transform: translate(-110%);
         width: 40%;
         height: 70%;
         --transition: all 0.2s linear;
         background-color: #EEEEEE;
-        border: 3px solid #DE0000;
+        outline: 3px solid #DE0000;
     }
 
     aside ul{
