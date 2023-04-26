@@ -991,7 +991,6 @@ aside{
         transition: var(--transition);
         transform: translate(-110%);
         width: 40%;
-        height: 70%;
         --transition: all 0.2s linear;
         background-color: #EEEEEE;
         outline: 3px solid #DE0000;
@@ -1003,9 +1002,10 @@ aside{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 4rem;
+        gap: 3rem;
         font-weight: 600;
         font-size: 1.2rem;
+        margin: 2rem 0;
     }
 
     aside li{
