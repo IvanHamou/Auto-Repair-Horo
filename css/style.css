@@ -466,10 +466,13 @@ main section .urus{
     border: 1px rgba(0, 0, 0, 0.3) solid;
 }
 
-.secTire article:nth-child(2) img,
-.secIdk article:nth-child(2) img{
+.secTire article:nth-child(2) img{
     max-width: 100px;
     margin-bottom: 1rem;
+}
+
+.secIdk article:nth-child(2) img{
+    max-width: 130px;
 }
 
 .secOil article:nth-child(1) img{
