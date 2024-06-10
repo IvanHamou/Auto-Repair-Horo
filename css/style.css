@@ -63,13 +63,20 @@ nav li{
 
 .contact,
 nav li:hover{
-    color: #DE0000;
+    color: #901717;
+}
+
+nav .contact:hover{
+    color: #FFFFFF;
 }
 
 .contact{
-    border: 3.3px #DE0000 solid;
+    background-color: #901717;
+    color: #FFFFFF;
     padding: 0.8rem 1rem;
     font-weight: 600;
+    border-radius: 16px;
+    border: none;
 }
 
 .hamburger{
@@ -1030,15 +1037,14 @@ aside{
 
 
 
-
-
-
-
 .active li{
-    color: #DE0000;
+    color: #901717;
     transition: 0.3s ease color;
-    font-size: 1.25rem;
-    border-bottom: #DE0000 4px solid;   
+  }
+  
+.active .contact{
+    color: #FFFFFF;
+    transition: 0.3s ease color;
   }
 
 
