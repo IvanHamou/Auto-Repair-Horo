@@ -21,18 +21,18 @@ body{
 header{
     display: flex;
     align-items: center;
-    box-shadow: 0 6px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 6px 4px 0 rgba(0, 0, 0, .2);
     width: 100%;
     position: fixed;
     background-color: #EEEEEE;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    gap: 4rem;
 }
 
 header section{
     display: flex;
     align-items: center;
-    width: 40%;
-    margin-left: 5rem;
-    padding: 1rem 0;
 }
 
 header section a h1{
@@ -40,7 +40,6 @@ header section a h1{
 }
 
 nav{
-    width: 60%;
 }
 
 nav a{
@@ -84,7 +83,7 @@ nav .contact:hover{
     display: none;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     .hamburger{
         display: block;
@@ -104,35 +103,20 @@ nav .contact:hover{
     nav ul{
         gap: 0;
     }
-    
-    header section{
-
-        width: 80%;
-    }
-
-
-    nav {
-        width: 20%;
-    }
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     nav ul{
         gap: 0;
     }
     
-    header section{
-        margin-left: 0;
-        width: 80%;
+    header{
+        padding: 1rem 2rem;
     }
 
     header section a h1{
         font-size: 1.1rem;
-    }
-
-    nav {
-        width: 20%;
     }
 
     #contactDiv .contact,
@@ -141,6 +125,16 @@ nav .contact:hover{
     }
 }
 
+@media (max-width: 428px){
+
+    header section a h1{
+        font-size: 0.8rem;
+    }
+
+    .logo{
+        width: 80px;
+    }
+}
 
 /*MAIN*/
 
@@ -215,7 +209,7 @@ main section .urus{
     max-width: 600px;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     main{
         padding-top: 10rem;
@@ -244,7 +238,7 @@ main section .urus{
     }
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     main{
         padding-top: 8rem;
@@ -326,7 +320,7 @@ main section .urus{
     font-size: 1.5rem;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     .ad{
         text-align: center; 
@@ -345,7 +339,7 @@ main section .urus{
     }
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .ad{
         margin-top: 5rem;
@@ -411,7 +405,7 @@ main section .urus{
 
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .pageTitle{
         font-size: 2rem;
@@ -487,7 +481,7 @@ main section .urus{
     margin-bottom: 1rem;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     .secOil{
         flex-direction: column-reverse;
@@ -506,7 +500,7 @@ main section .urus{
 
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .servicePage{
         margin-top: 5rem;
@@ -535,7 +529,7 @@ main section .urus{
     padding: 4rem 0;
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .seperation{
         margin-top: 8rem;
@@ -554,7 +548,7 @@ main section .urus{
     margin-top: 12rem;
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .aboutUsPage{
         margin-top: 5rem;
@@ -688,7 +682,7 @@ iframe{
 }
 
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     .contactContent{
         flex-direction: column;
@@ -713,7 +707,7 @@ iframe{
     }
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
     #fname,
     #lname,
     #subject{
@@ -794,7 +788,7 @@ iframe{
     font-size: 1.2rem;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     .adHours section{
         gap: 2rem;
@@ -845,7 +839,7 @@ iframe{
     cursor: pointer;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     .galleryPage h1{
         text-align: center;
@@ -853,7 +847,7 @@ iframe{
 
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .galleryPage section{
         padding: 0 2rem;
@@ -966,7 +960,7 @@ footer{
     font-weight: 500;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
     .mainFooter{
         gap: 3rem;
         flex-direction: column;
@@ -978,7 +972,7 @@ footer{
     }
 }
 
-@media (max-width: 590px){
+@media (max-width: 622px){
 
     .artCollection{
         flex-direction: column;
@@ -991,7 +985,7 @@ aside{
     display: none;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1066px){
 
     aside{
         display: flex;
@@ -1003,8 +997,8 @@ aside{
         transform: translate(-110%);
         width: 40%;
         --transition: all 0.2s linear;
-        background-color: #EEEEEE;
-        outline: 3px solid #DE0000;
+        background-color: #FFFFFF;
+        border-radius: 0 0 16px 0;
     }
 
     aside ul{
@@ -1016,7 +1010,7 @@ aside{
         gap: 3rem;
         font-weight: 600;
         font-size: 1.2rem;
-        margin: 2rem 0;
+        padding: 2rem 0;
     }
 
     aside li{
@@ -1024,14 +1018,19 @@ aside{
         cursor: pointer;
     }
 
-    aside .contact{
-        padding: 0.4rem 0.3rem;
-    }
-
     .displayMenu {
         transform: translate(0);
     }
 
+}
+
+@media (max-width: 428px){
+
+    aside li{
+        color: #0A0A0A;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
 }
 
 
