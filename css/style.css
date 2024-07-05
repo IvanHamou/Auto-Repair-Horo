@@ -145,10 +145,11 @@ main{
 
 /*MAIN HOMEPAGE*/
 .homePage{
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 0 3rem;
 }
 
 main .homeSec{
@@ -156,6 +157,7 @@ main .homeSec{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 60ch;
 }
 
 main .homeSec article{
@@ -163,24 +165,22 @@ main .homeSec article{
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    gap: 2rem;
+    gap: 1.5rem;
     justify-content: right;
-    width: 70ch;
 }
 
 main section article h2{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 #mainText{
-    font-size: 3rem;
-    border: 4px #DE0000 solid;
-    padding: 0.5rem 1.5rem;
-    color: #DE0000;
+    font-size: 5rem;
+    color: #901717;
 }
 
 main section article h4{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    color: #901717;
 }
 
 main section article button{
@@ -206,7 +206,7 @@ main section article div a{
 }
 
 main section .urus{
-    max-width: 600px;
+    width: 500px;
 }
 
 @media (max-width: 1066px){
@@ -227,7 +227,6 @@ main section .urus{
     main .homeSec article{
         align-items: center;
         text-align: center;
-        padding: 0 2rem;
     }
 
     #contactDiv {
@@ -244,16 +243,16 @@ main section .urus{
         padding-top: 8rem;
     }
 
+    main .homeSec article{
+        padding: 0;
+    }
+
     main section .urus{
         max-width: 350px;
     }
 
-    main section article h2{
-        font-size: 2rem;
-    }
-
     #mainText{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     main section article h4{
